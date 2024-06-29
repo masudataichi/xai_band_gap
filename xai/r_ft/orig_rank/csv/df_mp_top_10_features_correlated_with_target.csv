@@ -1,0 +1,11 @@
+Feature,Correlation
+avg_metallic_valence,0.6715168750693605
+avg_Density_(g/mL),0.6465834863099782
+range_1st_ionization_potential_(kJ/mol),0.6131922314599628
+range_Nagle_electonegativity,0.6120467305388655
+range_Allred-Rockow_electronegativity,0.6077628330770509
+range_Pauling_Electronegativity,0.6077371985482962
+avg_Nagle_electonegativity,0.5679087291617695
+avg_Period,0.5676465495213965
+range_Molar_Heat_Capacity(J/mol_K),0.5632437173881779
+range_Gordy_electonegativity,0.5517601142130375
