@@ -48,3 +48,13 @@ print("Best parameters found: ", grid_search.best_params_)
 # Best parameters found:  {'C': 10, 'gamma': 1}
 print("Best scores found: ", grid_search.best_score_)
 # Best scores found:  -0.4683233316526712
+
+results = pd.DataFrame(grid_search.cv_results_)
+for i in range(10):
+    results[f'split{i}_test_score'] = -results[f'split{i}_test_score']
+results['mean_test_score'] = -results['mean_test_score']
+output_results = results[['params', 'split0_test_score', 'split1_test_score', 'split2_test_score', 
+                          'split3_test_score', 'split4_test_score', 'split5_test_score', 
+                          'split6_test_score', 'split7_test_score', 'split8_test_score', 
+                          'split9_test_score', 'mean_test_score']]
+output_results.to_csv('csv/svr_exp.csv', index=False)

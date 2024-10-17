@@ -17,7 +17,7 @@ volume_reshape = np.array(volume).reshape(-1,1)
 reg = LinearRegression()
 reg.fit(formula_unit_mass_reshape, volume_reshape)
 
-plt.figure(figsize=(7, 6))
+plt.figure(figsize=(9.1, 7.8))
 plt.rcParams['xtick.direction'] = 'in'
 plt.rcParams['ytick.direction'] = 'in'
 plt.rcParams['font.family'] = 'Times New Roman'
@@ -31,5 +31,5 @@ plt.ylabel("Volume per unit cell (Å³)", fontsize=28)
 plt.text(0.05, 0.95, f'Correlation: {corr_coef:.2f}', 
              fontsize=18, transform=plt.gca().transAxes, verticalalignment='top')
 
-plt.tight_layout()
+# plt.tight_layout()
 plt.savefig("img/r_formula_unit_mass_volume.png")
