@@ -17,3 +17,5 @@ The PDP of the model fine-tuned with RMSE can be calculated in the `rmse_pdp` di
 The ALE of the model fine-tuned with RMSE can be calculated in the `rmse_ale` directory.
 
 <img src="img/ALE.png" alt="ALE">
+
+citation: https://doi.org/10.1063/5.0226151
